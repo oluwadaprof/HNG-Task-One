@@ -1,0 +1,23 @@
+.profile {
+  .profile__img {
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vw;
+    margin-top: 3rem;
+  }
+  p {
+    font-size: 1.2vw;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .profile {
+    .profile__img {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+}

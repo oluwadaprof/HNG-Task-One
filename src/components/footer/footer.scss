@@ -1,0 +1,11 @@
+.footer{
+    border-top: 1px solid #EAECF0;
+    width: 100%;
+   margin: 2rem auto;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}

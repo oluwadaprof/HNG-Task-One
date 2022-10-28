@@ -1,0 +1,35 @@
+.btn__group {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  row-gap: 1rem;
+
+  a {
+    
+    .btn {
+      width: 90vw;
+      height: 4rem;
+      color: #eaecf0;
+      border-radius: 8px;
+      border: none;
+      text-decoration: none;
+      color: black;
+      font-size: 11px;
+      font-weight: 500;
+      &:hover{
+        cursor: pointer;
+    }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+    .btn__group{
+        a{
+            .btn{
+                width: 40vw;
+            }
+        }
+    }
+}
