@@ -24,7 +24,7 @@ const BtnDetails = [
   {
     id: "pitch",
     btn_name: "Background Checks For Coders",
-    url: "https://books.zuri.team/design-rules",
+    url: "https://background.zuri.team",
   },
   {
     id: "book_design",

@@ -6,6 +6,7 @@ import share from "../../assets/share.png";
 const Profile = () => {
   return (
     <div className="profile">
+      <p id="slack" >Pandora</p>
       <div>
         <img className="profile__img" id="profile__img" src={tobi} alt="Tobi" />
         <p id="twitter">@oluwadaprof</p>
