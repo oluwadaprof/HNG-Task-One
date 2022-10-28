@@ -2,11 +2,10 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   row-gap: 1rem;
 
   a {
-    
     .btn {
       width: 90vw;
       height: 4rem;
@@ -19,6 +18,7 @@
       font-weight: 500;
       &:hover{
         cursor: pointer;
+        background: #D0D5DD;
     }
     }
   }

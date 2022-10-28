@@ -1,23 +1,59 @@
 .profile {
-  .profile__img {
-    border-radius: 50%;
-    width: 6vw;
-    height: 6vw;
-    margin-top: 3rem;
+  div {
+    .profile__img {
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      margin-top: 3rem;
+    }
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  p {
-    font-size: 1.2vw;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
+  .share {
+    position: relative;
+    left: 18rem;
+    top: -11rem;
+    border-radius: 50%;
+    border: 1px dotted #d0d5dd;
+    padding: 0.4rem;
+    &:hover {
+      background: #f9fafb;
+      cursor: pointer;
+    }
+  }
+  .dot {
+    display: none;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .profile {
     .profile__img {
-      width: 5vw;
-      height: 5vw;
+      border-radius: 50%;
+    }
+    p{
+      margin-top: 3rem;
+     font-weight: 600;
+    }
+    .share {
+      display: none;
+    }
+    .dot {
+      display: block;
+      position: relative;
+      top: -13rem;
+      left: 19rem;
+      border-radius: 50%;
+      border: 1px dotted #d0d5dd;
+      padding:  .8rem 0.4rem;
+      &:hover{
+         background: #f9fafb;
+         cursor: pointer; 
+      }
     }
   }
 }
