@@ -34,10 +34,8 @@ const BtnDetails = [
 ];
 
 const btn = BtnDetails.map((btndetail) => (
-  <a href={btndetail.url}>
-    <button key={btndetail.id} className="btn" id={btndetail.id}>
-      {btndetail.btn_name}
-    </button>
+  <a href={btndetail.url} key={btndetail.id} className="btn" id={btndetail.id}>
+    <p>{btndetail.btn_name}</p>
   </a>
 ));
 
