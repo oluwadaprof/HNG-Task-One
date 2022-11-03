@@ -1,0 +1,81 @@
+.contact {
+  text-align: left;
+  margin-left: 26%;
+
+  h1 {
+    font-size: 2.4rem;
+    margin-top: 4rem;
+  }
+
+  form {
+    margin-top: 3rem;
+    .fullname {
+      display: flex;
+      gap: 1rem;
+    }
+    .comment{
+        textarea{
+            resize: none;
+            border: 1px solid #d0d5dd;
+            border-radius: 8px;
+            padding: 10px 14px 10px 14px;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: #667085;
+                font-size: 16px;
+                margin-top: -.5rem;
+            }
+        }
+    }
+    div {
+      display: grid;
+      width: 30vw;
+
+      .label {
+        color: #344054;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 550;
+        margin-bottom: .3rem;
+      }
+      .input {
+        margin-bottom: 0.6rem;
+        border: 1px solid #d0d5dd;
+        border-radius: 8px;
+        height: 3rem;
+        padding: 0px 14px 0px 14px;
+        &:focus{
+            outline: none;
+        }
+      }
+    }
+    .checkbox {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    button {
+      margin-top: 1rem;
+      margin-bottom: 10rem;
+      height: 3rem;
+      width: 67.5%;
+      font-size: 1.2rem;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      background: #1570ef;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    margin-left: 0;
+    form {
+      width: 100%;
+    }
+  }
+}

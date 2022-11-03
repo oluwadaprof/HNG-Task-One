@@ -24,7 +24,14 @@
       cursor: pointer;
       background: #d0d5dd;
     }
+    .contact__btn{
+      text-decoration: none;
+      position: relative;
+      top: 1.4rem;
+      color: black;
+    }
   }
+  
 }
 
 @media screen and (min-width: 600px) {

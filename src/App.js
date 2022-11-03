@@ -1,15 +1,11 @@
 import "./App.css";
-import BtnLink from "./components/BtnLink/BtnLink";
+import CreateRoutes from "./routes/Router";
 import Footer from "./components/footer/Footer";
-import Icon from "./components/Icon/Icon";
-import Profile from "./components/profile/Profile";
 
 function App() {
   return (
     <div className="App">
-      <Profile />
-      <BtnLink />
-      <Icon />
+      <CreateRoutes/>
       <Footer/>
     </div>
   );

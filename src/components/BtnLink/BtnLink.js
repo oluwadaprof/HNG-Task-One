@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./btnlink.scss";
 
 const BtnDetails = [
@@ -31,16 +32,34 @@ const BtnDetails = [
     btn_name: "Design Books",
     url: "https://books.zuri.team/design-rules",
   },
+  
 ];
 
 const btn = BtnDetails.map((btndetail) => (
-  <a href={btndetail.url} key={btndetail.id} className="btn" id={btndetail.id}>
-    <p>{btndetail.btn_name}</p>
-  </a>
+  <>
+    <a
+      href={btndetail.url}
+      key={btndetail.id}
+      className="btn"
+      id={btndetail.id}
+    >
+      <p>{btndetail.btn_name}</p>
+    </a>
+  </>
 ));
 
 const BtnLink = () => {
-  return <div className="btn__group">{btn}</div>;
+  return (
+    <div className="btn__group">
+      {btn}
+
+      <Link className="btn" to="/contact">
+        <a className="contact__btn" id="contact" href="">
+          Contact Me{" "}
+        </a>
+      </Link>
+    </div>
+  );
 };
 
 export default BtnLink;
