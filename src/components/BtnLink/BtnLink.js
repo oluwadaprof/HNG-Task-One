@@ -54,7 +54,7 @@ const BtnLink = () => {
       {btn}
 
       <Link className="btn" to="/contact">
-        <a className="contact__btn" id="contact" href="">
+        <a className="contact__btn" id="contact">
           Contact Me{" "}
         </a>
       </Link>

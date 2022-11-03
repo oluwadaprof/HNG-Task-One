@@ -7,24 +7,36 @@ const Contact = () => {
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
 
       <form>
-        <div className="fullname" >
+        <div className="fullname">
           <div className="firstname">
             <label className="label">First Name</label>
-            <input className="input" placeholder="Enter your first name" />
+            <input
+              id="first_name"
+              className="input"
+              placeholder="Enter your first name"
+            />
           </div>
           <div className="lastname">
             <label className="label">Last Name</label>
-            <input className="input" placeholder="Enter your last name" />
+            <input
+              id="last_name"
+              className="input"
+              placeholder="Enter your last name"
+            />
           </div>
         </div>
 
         <div className="email">
           <label className="label">Email</label>
-          <input className="input" placeholder="your@gmail.com" />
+          <input id="email" className="input" placeholder="your@gmail.com" />
         </div>
         <div className="comment">
           <label className="label">Message</label>
-          <textarea  cols="19" rows="15"  placeholder="Send me a message and I'll reply you as soon as possible..."  />
+          <textarea
+            cols="19"
+            rows="8"
+            placeholder="Send me a message and I'll reply you as soon as possible..."
+          />
           <br />
         </div>
         <div className="checkbox">
@@ -33,7 +45,9 @@ const Contact = () => {
             You agree to providing your data to who may contact you.
           </label>
         </div>
-        <button type="">Send Message</button>
+        <button id="btn_submit" type="">
+          Send Message
+        </button>
       </form>
     </div>
   );
